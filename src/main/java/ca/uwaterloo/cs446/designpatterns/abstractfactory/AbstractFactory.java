@@ -1,4 +1,4 @@
-package ca.mcgill.ecse321.designpatterns.abstractfactory;
+package ca.uwaterloo.cs446.designpatterns.abstractfactory;
 
 public interface AbstractFactory {
 	public AbstractButton createButton();
