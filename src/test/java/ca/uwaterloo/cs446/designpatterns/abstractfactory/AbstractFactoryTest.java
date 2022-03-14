@@ -14,6 +14,11 @@ public class AbstractFactoryTest {
 	public void testWindows() {
 		testExpectedValues(new WindowsFactory(), "Ugly button", "Qt");
 	}
+
+	@Test
+	public void testAndroid() {
+		testExpectedValues(new AndroidFactory(), "Nice looking Android button", "Android UI");
+	}
 	
 	private void testExpectedValues(AbstractFactory factory, String buttonDesc, String menuType) {
 		AbstractButton button = factory.createButton();
